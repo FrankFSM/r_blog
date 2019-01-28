@@ -1,18 +1,20 @@
 <footer>
-    <div class="pull-right">
-        Copyright © 2018 <a href="https://www.zhyd.me" target="_blank">yadong.zhang</a> · Powered by <a href="https://gitee.com/yadong.zhang/DBlog" title="OneBlog是一款简洁美观、自适应的Java博客系统..." target="_blank"><strong>OneBlog</strong></a>. All Rights Reserved.
-    </div>
-    <div class="clearfix"></div>
+  <div class="pull-right">
+    Copyright&copy;2016-${.now?string("yyyy")} <a href="${config.siteUrl}" target="_blank">${config.authorName}</a> ·
+    Powered by <a href="${config.github}" title="${config.homeDesc}" target="_blank"><strong>${config.siteName}</strong></a>.
+    All Rights Reserved.
+  </div>
+  <div class="clearfix"></div>
 </footer>
 </div>
 </div>
 <script type="text/javascript">
-    var appConfig = {
-        qiniuPath: '${config.qiniuBasePath}',
-        qiniuImgStyle: '',// 上传文章图片时，会自动追加该值，主要用来定制化图片样式、水印背景等属性，默认无
-        wwwPath: '${config.siteUrl}',
-        staticPath: '${config.staticWebSite}'
-    }
+  var appConfig = {
+    qiniuPath: '${config.qiniuBasePath}',
+    qiniuImgStyle: '',// 上传文章图片时，会自动追加该值，主要用来定制化图片样式、水印背景等属性，默认无
+    wwwPath: '${config.siteUrl}',
+    staticPath: '${config.staticWebSite}'
+  }
 </script>
 <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js" type="text/javascript"></script>
