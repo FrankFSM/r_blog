@@ -1,6 +1,16 @@
 package com.zyd.blog.controller;
 
+import com.google.gson.Gson;
+import com.qiniu.common.QiniuException;
+import com.qiniu.common.Zone;
+import com.qiniu.http.Response;
+import com.qiniu.storage.UploadManager;
+import com.qiniu.storage.model.DefaultPutRet;
+import com.qiniu.util.Auth;
 import com.zyd.blog.BaseJunitTest;
+import com.zyd.blog.plugin.QiniuApi;
+import java.io.File;
+import java.io.IOException;
 import org.junit.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MvcResult;
